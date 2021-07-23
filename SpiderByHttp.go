@@ -25,7 +25,7 @@ var (
 
 
 func main() {
-	for i:=0; i < 3; i++ {
+	for i:=0; i < 43; i++ {
 		u := url + strconv.Itoa(i*20)
 		s1 := fetch(u)
 		dom, err := goquery.NewDocumentFromReader(strings.NewReader(s1))
